@@ -1,5 +1,6 @@
-package dev.bug.multiplication.challenge;
+package dev.bug.multiplication.challenge.service;
 
+import dev.bug.multiplication.challenge.model.Challenge;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -16,7 +17,7 @@ public class DefaultChallengeGeneratorService implements ChallengeGeneratorServi
         this(new Random());
     }
 
-    protected DefaultChallengeGeneratorService(final Random random) {
+    public DefaultChallengeGeneratorService(final Random random) {
         this.random = random;
     }
 

@@ -1,5 +1,7 @@
-package dev.bug.multiplication.challenge;
+package dev.bug.multiplication.challenge.service;
 
+import dev.bug.multiplication.challenge.model.ChallengeAttempt;
+import dev.bug.multiplication.challenge.model.ChallengeAttemptDto;
 import dev.bug.multiplication.user.User;
 import org.springframework.stereotype.Service;
 

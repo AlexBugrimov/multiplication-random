@@ -1,4 +1,4 @@
-package dev.bug.multiplication.challenge;
+package dev.bug.multiplication.challenge.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
