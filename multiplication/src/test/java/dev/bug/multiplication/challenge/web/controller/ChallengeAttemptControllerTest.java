@@ -43,7 +43,7 @@ class ChallengeAttemptControllerTest {
     void postValidResult() throws Exception {
         User user = new User(1L, "john");
         long attemptId = 5L;
-        ChallengeAttemptDto attemptDto = ChallengeAttemptDto.of(50, 70, "john", 3500);
+        ChallengeAttemptDto attemptDto = new ChallengeAttemptDto(50, 70, "john", 3500);
         ChallengeAttempt expectedResponse = new ChallengeAttempt(attemptId, user.getId(),
                 50, 70, 3500, true);
         given(challengeService.verifyAttempt(any(ChallengeAttemptDto.class))).willReturn(expectedResponse);
@@ -60,7 +60,7 @@ class ChallengeAttemptControllerTest {
 
     @Test
     void postInvalidResult() throws Exception {
-        ChallengeAttemptDto attemptDto = ChallengeAttemptDto.of(2000, -70, "john", 1);
+        ChallengeAttemptDto attemptDto = new ChallengeAttemptDto(2000, -70, "john", 1);
 
         MockHttpServletResponse response = mockMvc.perform(
                         post("/attempts")

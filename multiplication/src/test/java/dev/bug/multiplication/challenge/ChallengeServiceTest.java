@@ -20,7 +20,7 @@ class ChallengeServiceTest {
 
     @Test
     void checkCorrectAttemptTest() {
-        ChallengeAttemptDto attempt = ChallengeAttemptDto.of(50, 60, "john_doe", 3000);
+        ChallengeAttemptDto attempt = new ChallengeAttemptDto(50, 60, "john_doe", 3000);
 
         ChallengeAttempt resultAttempt = challengeService.verifyAttempt(attempt);
 
@@ -29,7 +29,7 @@ class ChallengeServiceTest {
 
     @Test
     void checkWrongAttemptTest() {
-        ChallengeAttemptDto attempt = ChallengeAttemptDto.of(50, 60, "john_doe", 5000);
+        ChallengeAttemptDto attempt = new ChallengeAttemptDto(50, 60, "john_doe", 5000);
 
         ChallengeAttempt resultAttempt = challengeService.verifyAttempt(attempt);
 
