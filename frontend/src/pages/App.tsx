@@ -1,10 +1,11 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
+import {Banner} from "../components/Banner";
 
 function App() {
   return (
     <div className="App">
-      <h1>Multiplication Random</h1>
+      <Banner/>
     </div>
   );
 }
