@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {useChallenge} from './hooks/useСhallenge'
 
-function App() {
+const host = process.env.REACT_APP_HOST
+
+export default function App() {
+  let {challenge, isLoading, error} = useChallenge(host);
+
+  if (error) {
+    return <div>Error</div>
+  }
+
+  if (isLoading) {
+    return <div>Loading...</div>
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>{JSON.stringify(challenge)}</h1>
       </header>
     </div>
   );
 }
-
-export default App;
