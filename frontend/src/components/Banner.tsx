@@ -10,8 +10,8 @@ export const Banner = () => (
         </svg>
       </div>
       <div>
-        <p className="font-bold">Информационное сообщение</p>
-        <p className="text-sm">Для начала игры нажмите "..."</p>
+        <p className="font-bold">Правила игры</p>
+        <p className="text-sm">Для начала игры введите свой псевдоним и числовое значение. Затем нажмите "Submit"</p>
       </div>
     </div>
   </div>

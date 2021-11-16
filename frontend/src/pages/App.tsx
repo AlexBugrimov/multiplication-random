@@ -1,9 +1,7 @@
 import React from 'react';
 import '../App.css';
-import {Banner} from "../components/Banner";
-import {Input} from "../components/Input";
-import {Layout} from "../components/Layout";
-import {Form} from "../components/Form";
+import {Banner, Button, Challenge, Form, Input, Layout} from "../components";
+
 
 function App() {
   return (
@@ -11,11 +9,17 @@ function App() {
       <Banner/>
       <Layout>
         <Form>
-          <div className="flex justify-center">
-            <Input placeholder="Alias"/>
-          </div>
-          <Input placeholder="Значение А"/>
-          <Input placeholder="Значение B"/>
+          <Challenge factorA={12} factorB={36}/>
+          <Input
+            type="text"
+            placeholder="Псевдоним"
+          />
+          <Input
+            type="number"
+            min={0}
+            placeholder="Угадай"
+          />
+          <Button text="Submit"/>
         </Form>
       </Layout>
     </div>
