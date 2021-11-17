@@ -1,8 +1,7 @@
 import React from "react";
 
 export const Challenge = (props: {
-  factorA: number,
-  factorB: number
+  text: string
 }) => (<div className="text-9xl text-teal-900">
-  {props.factorA} x {props.factorB}
+  {props.text}
 </div>)

@@ -1,8 +1,8 @@
-import {Banner} from "../components/Banner";
-import {Input} from "../components/Input";
-import {Layout} from "../components/Layout";
-import {Form} from "../components/Form";
-import {Button} from "../components/Button";
-import {Challenge} from "../components/Challenge";
+import {Banner} from "./Banner";
+import {Input} from "./Input";
+import {Layout} from "./Layout";
+import {Form} from "./Form";
+import {Button} from "./Button";
+import {Challenge} from "./Challenge";
 
 export {Banner, Input, Form, Layout, Challenge, Button}
