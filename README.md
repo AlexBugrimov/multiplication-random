@@ -1,4 +1,6 @@
 ### Случайное умножение
+![example workflow](https://github.com/AlexBugrimov/multiplication-random/actions/workflows/maven.yml/badge.svg)
+---
 ![Умножение](images/logo.png)
 
 ### Технологии:
