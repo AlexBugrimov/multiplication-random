@@ -26,7 +26,7 @@ function App() {
             {...guess}
           />
           <Button
-            text="Submit"
+            text="Угадай"
             onClick={() => console.log(alias.value, "---", guess.value)}
           />
         </Form>
